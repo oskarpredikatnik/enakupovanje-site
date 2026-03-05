@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-nakupovanje.si | Vodnik za pametne in varne nakupe v letu 2026</title>
+    <meta name="description" content="Strokovne primerjave, nasveti za varno spletno nakupovanje in pregled najnovejših potrošniških trendov v Sloveniji.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root { 
+            --primary: #2563eb; 
+            --secondary: #0f172a; 
+            --accent: #10b981; 
+            --bg: #f8fafc; 
+            --text: #334155; 
+            --white: #ffffff;
+        }
+
+        /* Basic Reset */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            line-height: 1.6; 
+            color: var(--text); 
+            background: var(--bg); 
+            overflow-x: hidden;
+        }
+
+        nav { 
+            background: var(--secondary); 
+            padding: 1rem; 
+            text-align: center; 
+            color: #fff; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: -1px; }
+
+        .hero { background: var(--white); padding: 3rem 1rem; border-bottom: 1px solid #e2e8f0; text-align: center; }
+        .hero h1 { font-size: clamp(1.8rem, 5vw, 2.5rem); color: var(--secondary); max-width: 900px; margin: 0 auto; line-height: 1.2; }
+
+        .container { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 1.25rem; }
+
+        /* Flexible Grid */
+        .main-layout { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 2rem; 
+            margin-top: 2rem; 
+        }
+
+        @media (min-width: 992px) {
+            .main-layout { flex-direction: row; align-items: flex-start; }
+            .main-content { flex: 2; }
+            .sidebar { flex: 1; position: sticky; top: 5rem; }
+        }
+
+        article { background: var(--white); padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        @media (min-width: 768px) { article { padding: 3rem; } }
+
+        h2 { font-size: 1.5rem; color: var(--primary); margin: 2.5rem 0 1.25rem; }
+        h3 { font-size: 1.2rem; color: var(--secondary); margin: 2rem 0 1rem; }
+        p { margin-bottom: 1.5rem; font-size: 1.05rem; text-align: left; }
+
+        .feature-box { 
+            background: #eff6ff; 
+            border-left: 5px solid var(--primary); 
+            padding: 1.5rem; 
+            margin: 2rem 0; 
+            border-radius: 0 8px 8px 0;
+        }
+
+        .specialist-market { 
+            background: var(--white); 
+            border: 2px solid #e2e8f0; 
+            padding: 2rem 1.5rem; 
+            margin: 3rem 0; 
+            border-radius: 8px; 
+            position: relative;
+        }
+        .specialist-market::after { 
+            content: 'NASVET'; 
+            position: absolute; 
+            top: -12px; 
+            right: 15px; 
+            background: var(--accent); 
+            color: white; 
+            padding: 2px 10px; 
+            font-size: 0.7rem; 
+            font-weight: 700; 
+            border-radius: 4px;
+        }
+
+        /* Responsive Table Fix */
+        .table-container { width: 100%; overflow-x: auto; margin: 2rem 0; border-radius: 8px; border: 1px solid #e2e8f0; }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 500px; }
+        .comparison-table th, .comparison-table td { padding: 12px 15px; border-bottom: 1px solid #e2e8f0; text-align: left; font-size: 0.9rem; }
+        .comparison-table th { background: #f8fafc; color: var(--secondary); }
+
+        .sidebar-box { background: var(--white); padding: 1.5rem; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); margin-bottom: 1.5rem; border: 1px solid #e2e8f0; }
+        .sidebar-box h4 { margin-bottom: 1rem; color: var(--secondary); border-bottom: 2px solid var(--primary); padding-bottom: 0.5rem; }
+
+        img { width: 100%; height: auto; border-radius: 8px; margin: 1.5rem 0; object-fit: cover; max-height: 400px; }
+
+        footer { text-align: center; padding: 4rem 1rem; color: #94a3b8; border-top: 1px solid #e2e8f0; background: var(--white); margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+<nav><div class="logo">E-NAKUPOVANJE.SI</div></nav>
+
+<div class="hero">
+    <div class="container">
+        <h1>Spletno nakupovanje v Sloveniji: Kako ločiti kakovost od prevare?</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="main-layout">
+        <div class="main-content">
+            <article>
+                <p>Digitalna preobrazba slovenskega trga je v letu 2026 dosegla vrhunec. Več kot 85 % gospodinjstev redno nakupuje preko spleta, kar je s seboj prineslo neizmerno izbiro, a hkrati tudi povečana tveganja. Pri <strong>E-nakupovanje.si</strong> smo opravili obsežno analizo trga, da bi vam pomagali razumeti, kje se skrivajo pasti.</p>
+
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80" alt="E-commerce Trends 2026">
+
+                <h2>1. Preverjanje verodostojnosti trgovca</h2>
+                <p>Prvi korak k varnemu nakupu ni več le iskanje najnižje cene, temveč preverjanje "digitalnega odtisa" trgovine. Verodostojni slovenski trgovci morajo imeti jasno navedene podatke o podjetju. V naši raziskavi smo ugotovili, da lokalni trgovci beležijo bistveno manj reklamacij kot tuje platforme brez jasnega porekla.</p>
+
+                <div class="feature-box">
+                    <strong>Trend 2026:</strong> Večina slovenskih potrošnikov se zdaj odmika od velikih azijskih platform in se vrača k specializiranim EU trgovcem, ki zagotavljajo skladnost z evropskimi standardi kakovosti.
+                </div>
+
+                <h2>2. Specializirani trgi in vprašanje diskretnosti</h2>
+                <p>Eno najhitreje rastočih področij v Sloveniji je prodaja izdelkov za zdravje in vitalnost. To so kategorije, kjer potrošniki ne iščejo le učinkovitosti, temveč tudi visoko stopnjo zasebnosti. Razumljivo je, da so določeni nakupi bolj osebne narave.</p>
+
+                <div class="specialist-market">
+                    <p>Ko govorimo o rešitvah za moško vitalnost, je trg preplavljen s ponaredki. Pri izdelkih, kot je <strong>Kamagra</strong>, strokovnjaki opozarjajo na pomen avtentičnosti. Slovenski kupci, ki cenijo svoje zdravje, se morajo zavedati, da sumljivo nizke cene na nepreverjenih straneh pogosto pomenijo tveganje.</p>
+                    <p>Pametno nakupovanje na tem področju pomeni izbiro dobaviteljev, ki zagotavljajo diskretno embalažo in originalne izdelke. Diskretnost pri dostavi je v letu 2026 postala standardna storitev premijskih trgovcev.</p>
+                </div>
+
+                <h2>3. Primerjava logističnih rešitev</h2>
+                <p>Dostava je zadnji, a ključni člen. V Sloveniji se je kot najbolj varna izkazala dostava na paketomate, saj kupcu omogoča anonimnost in fleksibilnost.</p>
+
+                <div class="table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Način dostave</th>
+                                <th>Hitrost</th>
+                                <th>Diskretnost</th>
+                                <th>Varnost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kurirska služba</td>
+                                <td>Zelo hitro</td>
+                                <td>Srednja</td>
+                                <td>Visoka</td>
+                            </tr>
+                            <tr>
+                                <td>Paketomat</td>
+                                <td>Fleksibilno</td>
+                                <td>Zelo visoka</td>
+                                <td>Zelo visoka</td>
+                            </tr>
+                            <tr>
+                                <td>Osebni prevzem</td>
+                                <td>Takoj</td>
+                                <td>Nizka</td>
+                                <td>Visoka</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-box">
+                <h4>Hitri nasveti</h4>
+                <p>• Nikoli ne shranjujte podatkov o kartici na nepreverjenih straneh.<br>• Uporabite dvostopenjsko avtentikacijo.<br>• Preverite SSL certifikat.</p>
+            </div>
+            <div class="sidebar-box">
+                <h4>Aktualne analize</h4>
+                <p>• Pregled trga zeliščnih dopolnil v Sloveniji.<br>• Vodnik po diskretnih pošiljkah za osebno nego.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 E-nakupovanje.si | Neodvisni potrošniški vodič.
+</footer>
+
+</body>
+</html>
